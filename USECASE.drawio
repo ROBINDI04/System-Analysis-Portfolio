@@ -1,0 +1,160 @@
+<mxfile host="65bd71144e">
+    <diagram id="usecase_full" name="Use Case Палитра и Пример">
+        <mxGraphModel dx="1565" dy="1144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=18;" value="ЭЛЕМЕНТЫ UML: ДИАГРАММА ВАРИАНТОВ ИСПОЛЬЗОВАНИЯ (USE CASE DIAGRAM)" vertex="1">
+                    <mxGeometry height="30" width="900" x="40" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="title_palette" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=14;" value="ПАЛИТРА ЭЛЕМЕНТОВ" vertex="1">
+                    <mxGeometry height="30" width="300" x="40" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_title_actor" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=12;" value="1. АКТОРЫ (Actors)" vertex="1">
+                    <mxGeometry height="20" width="200" x="40" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_actor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Пользователь" vertex="1">
+                    <mxGeometry height="60" width="30" x="60" y="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_actor_lbl" parent="1" style="text;html=1;align=left;" value="Внешняя сущность (человек, система)" vertex="1">
+                    <mxGeometry height="20" width="200" x="110" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_title_uc" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=12;" value="2. ВАРИАНТЫ ИСПОЛЬЗОВАНИЯ (Use Cases)" vertex="1">
+                    <mxGeometry height="20" width="300" x="40" y="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_uc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Совершить действие" vertex="1">
+                    <mxGeometry height="60" width="140" x="40" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_uc_lbl" parent="1" style="text;html=1;align=left;" value="Действие, которое выполняет система" vertex="1">
+                    <mxGeometry height="20" width="200" x="200" y="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_title_boundary" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=12;" value="3. ГРАНИЦА СИСТЕМЫ (System Boundary)" vertex="1">
+                    <mxGeometry height="20" width="300" x="40" y="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_boundary" parent="1" style="swimlane;whiteSpace=wrap;html=1;rounded=1;arcSize=5;fillColor=none;strokeColor=#666666;strokeWidth=2;startSize=30;fontStyle=1;" value="Название системы" vertex="1">
+                    <mxGeometry height="120" width="200" x="40" y="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_boundary_lbl" parent="1" style="text;html=1;align=left;" value="Прямоугольник, ограничивающий систему" vertex="1">
+                    <mxGeometry height="20" width="250" x="260" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_title_links" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=12;" value="4. СВЯЗИ (Relationships)" vertex="1">
+                    <mxGeometry height="20" width="300" x="40" y="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_assoc_actor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="" vertex="1">
+                    <mxGeometry height="40" width="20" x="60" y="640" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_assoc_uc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+                    <mxGeometry height="40" width="80" x="160" y="640" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_assoc_line" edge="1" parent="1" source="p_assoc_actor" style="endArrow=none;html=1;" target="p_assoc_uc">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_assoc_lbl" parent="1" style="text;html=1;align=left;" value="Ассоциация (сплошная линия)" vertex="1">
+                    <mxGeometry height="20" width="200" x="60" y="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_inc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Base" vertex="1">
+                    <mxGeometry height="40" width="80" x="40" y="740" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_inc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Included" vertex="1">
+                    <mxGeometry height="40" width="80" x="180" y="740" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_inc_line" edge="1" parent="1" source="p_inc1" style="endArrow=open;dashed=1;html=1;" target="p_inc2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_inc_lbl" parent="1" style="text;html=1;align=left;fontStyle=2;" value="include (включение)" vertex="1">
+                    <mxGeometry height="20" width="200" x="40" y="790" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_ext1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Extended" vertex="1">
+                    <mxGeometry height="40" width="80" x="40" y="840" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_ext2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Base" vertex="1">
+                    <mxGeometry height="40" width="80" x="180" y="840" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_ext_line" edge="1" parent="1" source="p_ext1" style="endArrow=open;dashed=1;html=1;" target="p_ext2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_ext_lbl" parent="1" style="text;html=1;align=left;fontStyle=2;" value="extend (расширение)" vertex="1">
+                    <mxGeometry height="20" width="200" x="40" y="890" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_gen1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Parent" vertex="1">
+                    <mxGeometry height="40" width="80" x="40" y="940" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_gen2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Child" vertex="1">
+                    <mxGeometry height="40" width="80" x="180" y="940" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_gen_line" edge="1" parent="1" source="p_gen2" style="endArrow=block;endFill=0;html=1;" target="p_gen1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_gen_lbl" parent="1" style="text;html=1;align=left;fontStyle=2;" value="Обобщение (наследование)" vertex="1">
+                    <mxGeometry height="20" width="200" x="40" y="990" as="geometry"/>
+                </mxCell>
+                <mxCell id="title_example" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=14;" value="ПРИМЕР: ИНТЕРНЕТ-МАГАЗИН" vertex="1">
+                    <mxGeometry height="30" width="400" x="550" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_boundary" parent="1" style="swimlane;whiteSpace=wrap;html=1;rounded=1;arcSize=5;fillColor=none;strokeColor=#666666;strokeWidth=2;startSize=30;fontStyle=1;fontSize=14;" value="Интернет-магазин" vertex="1">
+                    <mxGeometry height="700" width="500" x="600" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_actor_buyer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Покупатель" vertex="1">
+                    <mxGeometry height="60" width="30" x="520" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_actor_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Администратор" vertex="1">
+                    <mxGeometry height="60" width="30" x="1120" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_uc_order" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Оформить заказ" vertex="1">
+                    <mxGeometry height="60" width="140" x="680" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_uc_pay" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Выбрать способ оплаты" vertex="1">
+                    <mxGeometry height="60" width="140" x="680" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_uc_search" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Найти товар" vertex="1">
+                    <mxGeometry height="60" width="140" x="860" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_uc_search_cat" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Поиск по категориям" vertex="1">
+                    <mxGeometry height="60" width="130" x="830" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_uc_search_brand" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Поиск по бренду" vertex="1">
+                    <mxGeometry height="60" width="120" x="970" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_uc_manage" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Управление товарами" vertex="1">
+                    <mxGeometry height="60" width="140" x="860" y="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_uc_add" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Добавить товар" vertex="1">
+                    <mxGeometry height="60" width="140" x="860" y="650" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_link_buyer_order" edge="1" parent="1" source="ex_actor_buyer" style="endArrow=none;html=1;" target="ex_uc_order">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_link_buyer_search" edge="1" parent="1" source="ex_actor_buyer" style="endArrow=none;html=1;" target="ex_uc_search">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_link_admin_manage" edge="1" parent="1" source="ex_actor_admin" style="endArrow=none;html=1;" target="ex_uc_manage">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_link_inc" edge="1" parent="1" source="ex_uc_order" style="endArrow=open;dashed=1;html=1;endSize=8;" target="ex_uc_pay">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_lbl_inc" connectable="0" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;i&gt;include&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="20" width="60" x="730" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_link_ext1" edge="1" parent="1" source="ex_uc_search_cat" style="endArrow=open;dashed=1;html=1;endSize=8;" target="ex_uc_search">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_lbl_ext1" connectable="0" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;i&gt;extend&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="20" width="60" x="850" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_link_ext2" edge="1" parent="1" source="ex_uc_search_brand" style="endArrow=open;dashed=1;html=1;endSize=8;" target="ex_uc_search">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_lbl_ext2" connectable="0" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;i&gt;extend&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="20" width="60" x="970" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_link_inc2" edge="1" parent="1" source="ex_uc_manage" style="endArrow=open;dashed=1;html=1;endSize=8;" target="ex_uc_add">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_lbl_inc2" connectable="0" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;i&gt;include&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="20" width="60" x="900" y="590" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

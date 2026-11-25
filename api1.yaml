@@ -1,0 +1,116 @@
+openapi: 3.0.0
+info:
+  title: API Учебного проекта системного аналитика
+  description: |
+    Добро пожаловать в документацию нашего API! 
+    Этот интерфейс создан для демонстрации возможностей VS Code.
+    
+    **Основные возможности:**
+    * Просмотр списка пользователей
+    * Создание нового пользователя
+  version: 1.0.0
+  contact:
+    name: Отдел системного анализа
+    email: analyst@example.com
+
+servers:
+  - url: https://api.example.com/v1
+    description: Продакшн сервер
+  - url: https://sandbox.example.com/v1
+    description: Тестовый сервер (Sandbox)
+paths:
+  /users:
+    get:
+      summary: Получить список пользователей
+      description: Возвращает постраничный список всех зарегистрированных пользователей в системе.
+      tags:
+        - Пользователи
+      parameters:
+        - name: limit
+          in: query
+          description: Максимальное количество возвращаемых записей
+          required: false
+          schema:
+            type: integer
+            default: 20
+        - name: role
+          in: query
+          description: Фильтр по роли пользователя
+          required: false
+          schema:
+            type: string
+            enum: [admin, manager, user]
+      responses:
+        '200':
+          description: Успешный ответ. Массив пользователей.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+        '401':
+          description: Ошибка авторизации (токен не передан или просрочен)
+        '500':
+          description: Внутренняя ошибка сервера
+
+    post:
+      summary: Создать нового пользователя
+      description: Добавляет нового пользователя в систему и возвращает его данные.
+      tags:
+        - Пользователи
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewUser'
+      responses:
+        '201':
+          description: Пользователь успешно создан
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Ошибка валидации входных данных
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Уникальный идентификатор пользователя
+          example: 101
+        name:
+          type: string
+          description: Полное имя пользователя
+          example: Иван Иванов
+        email:
+          type: string
+          description: Электронная почта
+          example: ivan@example.com
+        role:
+          type: string
+          description: Роль в системе
+          example: manager
+    NewUser:
+      type: object
+      required:
+        - name
+        - email
+      properties:
+        name:
+          type: string
+          description: Полное имя пользователя
+          example: Мария Петрова
+        email:
+          type: string
+          description: Электронная почта
+          example: maria@example.com
+        role:
+          type: string
+          description: Роль в системе (по умолчанию user)
+          example: user
