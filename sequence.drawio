@@ -1,305 +1,247 @@
-<mxfile host="Electron" modified="2024-05-22T19:00:00.000Z" agent="Mozilla/5.0" version="21.2.8" type="device">
-  <diagram id="sequence_full" name="Полная палитра Sequence">
-    <mxGraphModel dx="1400" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-
-        <!-- ЗАГОЛОВОК -->
-        <mxCell id="title" value="ЭЛЕМЕНТЫ UML: ДИАГРАММА ПОСЛЕДОВАТЕЛЬНОСТИ" style="text;html=1;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="800" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- 1. УЧАСТНИКИ -->
-        <mxCell id="title_parts" value="1. УЧАСТНИКИ (Participants)" style="text;html=1;align=left;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="40" y="70" width="300" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="p_actor" value="Актор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="60" y="120" width="30" height="60" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="p_boundary" value="" style="shape=umlBoundary;whiteSpace=wrap;html=1;size=0.2;" vertex="1" parent="1">
-          <mxGeometry x="180" y="130" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="p_boundary_lbl" value="Граница" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="160" y="180" width="80" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="p_control" value="" style="shape=umlControl;whiteSpace=wrap;html=1;size=0.2;" vertex="1" parent="1">
-          <mxGeometry x="280" y="130" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="p_control_lbl" value="Контроллер" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="260" y="180" width="80" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="p_entity" value="" style="shape=umlEntity;whiteSpace=wrap;html=1;size=0.2;" vertex="1" parent="1">
-          <mxGeometry x="380" y="130" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="p_entity_lbl" value="Сущность" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="360" y="180" width="80" height="20" as="geometry" />
-        </mxCell>
-
-        <!-- 2. ЛИНИИ ЖИЗНИ -->
-        <mxCell id="title_lifelines" value="2. ЛИНИИ ЖИЗНИ И АКТИВАЦИИ" style="text;html=1;align=left;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="40" y="240" width="400" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="ll_obj" value=":Объект" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="60" y="290" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="ll_line" value="" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="99" y="330" width="2" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="ll_activation" value="" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="92" y="360" width="16" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="lbl_ll" value="Линия жизни и Активация" style="text;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="130" y="380" width="250" height="20" as="geometry" />
-        </mxCell>
-
-        <!-- 3. СООБЩЕНИЯ -->
-        <mxCell id="title_msgs" value="3. СООБЩЕНИЯ (Messages)" style="text;html=1;align=left;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="550" y="70" width="300" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="msg_sync" value="Синхронное" style="text;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="550" y="120" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="msg_sync_line" edge="1" parent="1" style="endArrow=block;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="550" y="150" as="sourcePoint" />
-            <mxPoint x="700" y="150" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <mxCell id="msg_async" value="Асинхронное" style="text;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="550" y="190" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="msg_async_line" edge="1" parent="1" style="endArrow=open;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="550" y="220" as="sourcePoint" />
-            <mxPoint x="700" y="220" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <mxCell id="msg_reply" value="Ответ" style="text;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="550" y="260" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="msg_reply_line" edge="1" parent="1" style="endArrow=open;html=1;dashed=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="290" as="sourcePoint" />
-            <mxPoint x="550" y="290" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <!-- 4. ФРЕЙМЫ -->
-        <mxCell id="title_frames" value="4. ФРЕЙМЫ (Combined Fragments)" style="text;html=1;align=left;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="40" y="520" width="400" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="frame_alt" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="570" width="200" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="alt_msg" value="Условие выполнено" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="80" y="620" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="alt_sep" value="else" style="line;strokeWidth=1;html=1;dashed=1;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="40" y="660" width="200" height="10" as="geometry" />
-        </mxCell>
-        <mxCell id="alt_else" value="Условие не выполнено" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="80" y="670" width="120" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="frame_opt" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="570" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="opt_msg" value="[Условие]" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="300" y="620" width="120" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="frame_loop" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="570" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="loop_msg" value="[Условие цикла]" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="500" y="620" width="120" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="frame_par" value="par" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="570" width="160" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="par_msg1" value="Поток 1" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="700" y="620" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="par_sep" value="" style="line;strokeWidth=1;html=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="660" width="160" height="10" as="geometry" />
-        </mxCell>
-        <mxCell id="par_msg2" value="Поток 2" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="700" y="670" width="120" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="frame_neg" value="neg" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="720" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="neg_msg" value="Недопустимый сценарий" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="60" y="770" width="120" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="frame_ref" value="ref" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="720" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ref_msg" value="Другая диаграмма" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="260" y="770" width="120" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="frame_sd" value="sd" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="720" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sd_msg" value="Имя диаграммы" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="460" y="770" width="120" height="20" as="geometry" />
-        </mxCell>
-
-        <!-- 5. КОММЕНТАРИИ -->
-        <mxCell id="title_comments" value="5. КОММЕНТАРИИ (Notes)" style="text;html=1;align=left;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="40" y="850" width="300" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="note" value="Текст комментария" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="890" width="120" height="60" as="geometry" />
-        </mxCell>
-
-        <!-- ========================================== -->
-        <!-- 6. ПРИМЕР: ПОКУПКА ТОВАРА (ИСПРАВЛЕННЫЙ) -->
-        <!-- ========================================== -->
-        <mxCell id="title_example" value="6. ПРИМЕР: ПРОЦЕСС ПОКУПКИ ТОВАРА" style="text;html=1;align=left;fontStyle=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="40" y="1000" width="600" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Участники -->
-        <mxCell id="ex_user" value="Клиент" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="100" y="1060" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_ui" value="" style="shape=umlBoundary;whiteSpace=wrap;html=1;size=0.2;" vertex="1" parent="1">
-          <mxGeometry x="280" y="1070" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_ui_lbl" value="Интерфейс" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="260" y="1110" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_ctrl" value="" style="shape=umlControl;whiteSpace=wrap;html=1;size=0.2;" vertex="1" parent="1">
-          <mxGeometry x="480" y="1070" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_ctrl_lbl" value="Контроллер" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="460" y="1110" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_db" value="" style="shape=umlEntity;whiteSpace=wrap;html=1;size=0.2;" vertex="1" parent="1">
-          <mxGeometry x="680" y="1070" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_db_lbl" value="База Данных" style="text;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="660" y="1110" width="80" height="20" as="geometry" />
-        </mxCell>
-
-        <!-- Линии жизни (Использован стиль dashed=1, но как обычные прямоугольники шириной 2px) -->
-        <!-- 1. Клиент (x=100 to 130) -> Центр x=115 -->
-        <mxCell id="ex_ll1" value="" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="114" y="1120" width="2" height="450" as="geometry" />
-        </mxCell>
-        <!-- 2. Интерфейс (x=280 to 320) -> Центр x=300 -->
-        <mxCell id="ex_ll2" value="" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="299" y="1110" width="2" height="460" as="geometry" />
-        </mxCell>
-        <!-- 3. Контроллер (x=480 to 520) -> Центр x=500 -->
-        <mxCell id="ex_ll3" value="" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="499" y="1110" width="2" height="460" as="geometry" />
-        </mxCell>
-        <!-- 4. БД (x=680 to 720) -> Центр x=700 -->
-        <mxCell id="ex_ll4" value="" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="699" y="1110" width="2" height="460" as="geometry" />
-        </mxCell>
-
-        <!-- Фрейм Alt -->
-        <mxCell id="ex_alt_frame" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="80" y="1220" width="660" height="290" as="geometry" />
-        </mxCell>
-
-        <!-- 1. Клиент -> Интерфейс -->
-        <mxCell id="ex_msg1" value="1. Нажать 'Купить'" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="130" y="1160" width="130" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_msg1_line" edge="1" parent="1" style="endArrow=block;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="115" y="1185" as="sourcePoint" />
-            <mxPoint x="300" y="1185" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <!-- 2. Интерфейс -> Контроллер -->
-        <mxCell id="ex_msg2" value="2. Запрос в контроллер" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="320" y="1250" width="160" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_msg2_line" edge="1" parent="1" style="endArrow=block;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="300" y="1275" as="sourcePoint" />
-            <mxPoint x="500" y="1275" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <!-- 3. Контроллер -> БД -->
-        <mxCell id="ex_msg3" value="3. Проверить наличие" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="520" y="1320" width="160" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_msg3_line" edge="1" parent="1" style="endArrow=block;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="500" y="1345" as="sourcePoint" />
-            <mxPoint x="700" y="1345" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <!-- Разделитель Else -->
-        <mxCell id="ex_else" value="else [Товара нет]" style="line;strokeWidth=1;html=1;dashed=1;align=left;verticalAlign=bottom;fontSize=11;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="80" y="1400" width="660" height="10" as="geometry" />
-        </mxCell>
-
-        <!-- 4. БД -> Контроллер -->
-        <mxCell id="ex_msg4" value="4. Вернуть ошибку" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="520" y="1420" width="160" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_msg4_line" edge="1" parent="1" style="endArrow=open;html=1;dashed=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="1445" as="sourcePoint" />
-            <mxPoint x="500" y="1445" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <!-- 5. Контроллер -> Интерфейс -->
-        <mxCell id="ex_msg5" value="5. Ошибка" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="320" y="1460" width="160" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_msg5_line" edge="1" parent="1" style="endArrow=open;html=1;dashed=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="500" y="1485" as="sourcePoint" />
-            <mxPoint x="300" y="1485" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <!-- 6. Интерфейс -> Клиент -->
-        <mxCell id="ex_msg6" value="6. Показать сообщение" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="130" y="1500" width="150" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_msg6_line" edge="1" parent="1" style="endArrow=open;html=1;dashed=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="300" y="1525" as="sourcePoint" />
-            <mxPoint x="115" y="1525" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <!-- Активации -->
-        <mxCell id="ex_act_ctrl" value="" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="492" y="1265" width="16" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="ex_act_ui" value="" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="292" y="1175" width="16" height="370" as="geometry" />
-        </mxCell>
-
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="sequence_full" name="Полная палитра Sequence">
+        <mxGraphModel dx="2321" dy="915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=18;" value="ЭЛЕМЕНТЫ UML: ДИАГРАММА ПОСЛЕДОВАТЕЛЬНОСТИ" vertex="1">
+                    <mxGeometry height="30" width="800" x="40" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="title_parts" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=14;" value="1. УЧАСТНИКИ (Participants)" vertex="1">
+                    <mxGeometry height="30" width="300" x="40" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_actor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" value="Актор" vertex="1">
+                    <mxGeometry height="60" width="30" x="60" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_boundary" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;size=0.2;" value="" vertex="1">
+                    <mxGeometry height="40" width="40" x="180" y="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_boundary_lbl" parent="1" style="text;html=1;align=center;" value="Граница" vertex="1">
+                    <mxGeometry height="20" width="80" x="160" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_control" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;size=0.2;" value="" vertex="1">
+                    <mxGeometry height="40" width="40" x="280" y="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_control_lbl" parent="1" style="text;html=1;align=center;" value="Контроллер" vertex="1">
+                    <mxGeometry height="20" width="80" x="260" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_entity" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;size=0.2;" value="" vertex="1">
+                    <mxGeometry height="40" width="40" x="380" y="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_entity_lbl" parent="1" style="text;html=1;align=center;" value="Сущность" vertex="1">
+                    <mxGeometry height="20" width="80" x="360" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="title_lifelines" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=14;" value="2. ЛИНИИ ЖИЗНИ И АКТИВАЦИИ" vertex="1">
+                    <mxGeometry height="30" width="400" x="40" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_obj" parent="1" style="html=1;whiteSpace=wrap;" value=":Объект" vertex="1">
+                    <mxGeometry height="40" width="80" x="60" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_line" parent="1" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" value="" vertex="1">
+                    <mxGeometry height="150" width="2" x="99" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_activation" parent="1" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+                    <mxGeometry height="80" width="16" x="92" y="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl_ll" parent="1" style="text;html=1;align=left;" value="Линия жизни и Активация" vertex="1">
+                    <mxGeometry height="20" width="250" x="130" y="380" as="geometry"/>
+                </mxCell>
+                <mxCell id="title_msgs" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=14;" value="3. СООБЩЕНИЯ (Messages)" vertex="1">
+                    <mxGeometry height="30" width="300" x="550" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="msg_sync" parent="1" style="text;html=1;align=left;" value="Синхронное" vertex="1">
+                    <mxGeometry height="20" width="100" x="550" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="msg_sync_line" edge="1" parent="1" style="endArrow=block;html=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="150" as="sourcePoint"/>
+                        <mxPoint x="700" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="msg_async" parent="1" style="text;html=1;align=left;" value="Асинхронное" vertex="1">
+                    <mxGeometry height="20" width="100" x="550" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="msg_async_line" edge="1" parent="1" style="endArrow=open;html=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="220" as="sourcePoint"/>
+                        <mxPoint x="700" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="msg_reply" parent="1" style="text;html=1;align=left;" value="Ответ" vertex="1">
+                    <mxGeometry height="20" width="100" x="550" y="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="msg_reply_line" edge="1" parent="1" style="endArrow=open;html=1;dashed=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="700" y="290" as="sourcePoint"/>
+                        <mxPoint x="550" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="title_frames" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=14;" value="4. ФРЕЙМЫ (Combined Fragments)" vertex="1">
+                    <mxGeometry height="30" width="400" x="40" y="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_alt" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" value="alt" vertex="1">
+                    <mxGeometry height="120" width="200" x="40" y="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="alt_msg" parent="1" style="text;html=1;align=center;" value="Условие выполнено" vertex="1">
+                    <mxGeometry height="20" width="120" x="80" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="alt_sep" parent="1" style="line;strokeWidth=1;html=1;dashed=1;align=left;verticalAlign=bottom;" value="else" vertex="1">
+                    <mxGeometry height="10" width="200" x="40" y="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="alt_else" parent="1" style="text;html=1;align=center;" value="Условие не выполнено" vertex="1">
+                    <mxGeometry height="20" width="120" x="80" y="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_opt" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" value="opt" vertex="1">
+                    <mxGeometry height="80" width="160" x="280" y="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="opt_msg" parent="1" style="text;html=1;align=center;" value="[Условие]" vertex="1">
+                    <mxGeometry height="20" width="120" x="300" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_loop" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" value="loop" vertex="1">
+                    <mxGeometry height="80" width="160" x="480" y="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="loop_msg" parent="1" style="text;html=1;align=center;" value="[Условие цикла]" vertex="1">
+                    <mxGeometry height="20" width="120" x="500" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_par" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" value="par" vertex="1">
+                    <mxGeometry height="120" width="160" x="680" y="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="par_msg1" parent="1" style="text;html=1;align=center;" value="Поток 1" vertex="1">
+                    <mxGeometry height="20" width="120" x="700" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="par_sep" parent="1" style="line;strokeWidth=1;html=1;dashed=1;" value="" vertex="1">
+                    <mxGeometry height="10" width="160" x="680" y="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="par_msg2" parent="1" style="text;html=1;align=center;" value="Поток 2" vertex="1">
+                    <mxGeometry height="20" width="120" x="700" y="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_neg" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" value="neg" vertex="1">
+                    <mxGeometry height="80" width="160" x="40" y="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="neg_msg" parent="1" style="text;html=1;align=center;" value="Недопустимый сценарий" vertex="1">
+                    <mxGeometry height="20" width="120" x="60" y="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_ref" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" value="ref" vertex="1">
+                    <mxGeometry height="80" width="160" x="240" y="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="ref_msg" parent="1" style="text;html=1;align=center;" value="Другая диаграмма" vertex="1">
+                    <mxGeometry height="20" width="120" x="260" y="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_sd" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;" value="sd" vertex="1">
+                    <mxGeometry height="80" width="160" x="440" y="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="sd_msg" parent="1" style="text;html=1;align=center;" value="Имя диаграммы" vertex="1">
+                    <mxGeometry height="20" width="120" x="460" y="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="title_comments" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=14;" value="5. КОММЕНТАРИИ (Notes)" vertex="1">
+                    <mxGeometry height="30" width="300" x="40" y="850" as="geometry"/>
+                </mxCell>
+                <mxCell id="note" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;" value="Текст комментария" vertex="1">
+                    <mxGeometry height="60" width="120" x="40" y="890" as="geometry"/>
+                </mxCell>
+                <mxCell id="title_example" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=16;" value="6. ПРИМЕР: ПРОЦЕСС ПОКУПКИ ТОВАРА" vertex="1">
+                    <mxGeometry height="30" width="600" x="40" y="1000" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_user" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" value="Клиент" vertex="1">
+                    <mxGeometry height="60" width="30" x="100" y="1060" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_ui" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;size=0.2;" value="" vertex="1">
+                    <mxGeometry height="40" width="40" x="280" y="1070" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_ui_lbl" parent="1" style="text;html=1;align=center;" value="Интерфейс" vertex="1">
+                    <mxGeometry height="20" width="80" x="260" y="1110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_ctrl" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;size=0.2;" value="" vertex="1">
+                    <mxGeometry height="40" width="40" x="480" y="1070" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_ctrl_lbl" parent="1" style="text;html=1;align=center;" value="Контроллер" vertex="1">
+                    <mxGeometry height="20" width="80" x="460" y="1110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_db" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;size=0.2;" value="" vertex="1">
+                    <mxGeometry height="40" width="40" x="680" y="1070" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_db_lbl" parent="1" style="text;html=1;align=center;" value="База Данных" vertex="1">
+                    <mxGeometry height="20" width="80" x="660" y="1110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_ll1" parent="1" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" value="" vertex="1">
+                    <mxGeometry height="450" width="2" x="114" y="1120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_ll2" parent="1" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" value="" vertex="1">
+                    <mxGeometry height="460" width="2" x="299" y="1110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_ll3" parent="1" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" value="" vertex="1">
+                    <mxGeometry height="460" width="2" x="499" y="1110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_ll4" parent="1" style="html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;dashed=1;" value="" vertex="1">
+                    <mxGeometry height="460" width="2" x="699" y="1110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_alt_frame" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=25;boundedLbl=1;verticalAlign=top;align=left;spacingLeft=60;fontStyle=1;fillColor=none;" value="alt" vertex="1">
+                    <mxGeometry height="290" width="660" x="80" y="1220" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_msg1" parent="1" style="text;html=1;align=center;fontSize=11;" value="1. Нажать &#39;Купить&#39;" vertex="1">
+                    <mxGeometry height="20" width="130" x="130" y="1160" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_msg1_line" edge="1" parent="1" style="endArrow=block;html=1;entryX=1.944;entryY=0.16;entryDx=0;entryDy=0;entryPerimeter=0;" target="ex_ll2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="115" y="1185" as="sourcePoint"/>
+                        <mxPoint x="300" y="1185" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ex_msg2" parent="1" style="text;html=1;align=center;fontSize=11;" value="2. Запрос в контроллер" vertex="1">
+                    <mxGeometry height="20" width="160" x="320" y="1250" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_msg2_line" edge="1" parent="1" style="endArrow=block;html=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="1275" as="sourcePoint"/>
+                        <mxPoint x="500" y="1275" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ex_msg3" parent="1" style="text;html=1;align=center;fontSize=11;" value="3. Проверить наличие" vertex="1">
+                    <mxGeometry height="20" width="160" x="520" y="1320" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_msg3_line" edge="1" parent="1" style="endArrow=block;html=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="500" y="1345" as="sourcePoint"/>
+                        <mxPoint x="700" y="1345" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ex_else" parent="1" style="line;strokeWidth=1;html=1;dashed=1;align=left;verticalAlign=bottom;fontSize=11;fillColor=none;" value="else [Товара нет]" vertex="1">
+                    <mxGeometry height="10" width="660" x="80" y="1400" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_msg4" parent="1" style="text;html=1;align=center;fontSize=11;" value="4. Вернуть ошибку" vertex="1">
+                    <mxGeometry height="20" width="160" x="520" y="1420" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_msg4_line" edge="1" parent="1" style="endArrow=open;html=1;dashed=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="700" y="1445" as="sourcePoint"/>
+                        <mxPoint x="500" y="1445" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ex_msg5" parent="1" style="text;html=1;align=center;fontSize=11;" value="5. Ошибка" vertex="1">
+                    <mxGeometry height="20" width="160" x="320" y="1460" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_msg5_line" edge="1" parent="1" style="endArrow=open;html=1;dashed=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="500" y="1485" as="sourcePoint"/>
+                        <mxPoint x="300" y="1485" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ex_msg6" parent="1" style="text;html=1;align=center;fontSize=11;" value="6. Показать сообщение" vertex="1">
+                    <mxGeometry height="20" width="150" x="130" y="1500" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_msg6_line" edge="1" parent="1" style="endArrow=open;html=1;dashed=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="1525" as="sourcePoint"/>
+                        <mxPoint x="115" y="1525" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ex_act_ctrl" parent="1" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+                    <mxGeometry height="230" width="16" x="492" y="1265" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_act_ui" parent="1" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+                    <mxGeometry height="370" width="16" x="292" y="1175" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

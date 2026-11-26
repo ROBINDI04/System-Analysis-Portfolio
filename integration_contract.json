@@ -1,0 +1,27 @@
+{
+    "request": {
+        "client": {
+            "firstName": "Иван",
+            "lastName": "Иванов",
+            "passportSeries": "1234",
+            "passportNumber": "567890",
+            "phone": "+375441234567",
+            "email": "ivan@example.com"
+        },
+        "leasingDetails": {
+            "assetType": "CAR",
+            "assetPrice": 50000.00,
+            "currency": "BYN",
+            "termMonths": 36,
+            "downPayment": 10000.00
+        }
+    },
+    "response": {
+        "applicationId": "APP-2024-00123",
+        "status": "APPROVED",
+        "score": 750,
+        "maxApprovedAmount": 45000.00,
+        "interestRate": 12.5,
+        "reason": null
+    }
+}

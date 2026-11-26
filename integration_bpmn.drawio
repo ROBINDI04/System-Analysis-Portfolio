@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="integration_bpmn" name="Интеграция Лизинг">
-        <mxGraphModel dx="2482" dy="2618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+        <mxGraphModel dx="1506" dy="2663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -28,8 +28,10 @@
                 <mxCell id="Fum3_wAnAOVVhxwtMtIQ-14" parent="1" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;whiteSpace=wrap;rounded=1;roundedPerimeter=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 14px;&quot;&gt;Лизинговая компания&lt;/span&gt;" vertex="1">
                     <mxGeometry height="570" width="1000" x="130" y="-1490" as="geometry"/>
                 </mxCell>
-                <mxCell id="Fum3_wAnAOVVhxwtMtIQ-71" edge="1" parent="Fum3_wAnAOVVhxwtMtIQ-14" source="Fum3_wAnAOVVhxwtMtIQ-67" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="Fum3_wAnAOVVhxwtMtIQ-38">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="Fum3_wAnAOVVhxwtMtIQ-71" edge="1" parent="Fum3_wAnAOVVhxwtMtIQ-14" source="Fum3_wAnAOVVhxwtMtIQ-17" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="Fum3_wAnAOVVhxwtMtIQ-38">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="190" as="sourcePoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="Fum3_wAnAOVVhxwtMtIQ-15" parent="Fum3_wAnAOVVhxwtMtIQ-14" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Менеджер&lt;/span&gt;" vertex="1">
                     <mxGeometry height="330" width="1000" y="20" as="geometry"/>
@@ -75,22 +77,19 @@
                 <mxCell id="Fum3_wAnAOVVhxwtMtIQ-80" parent="Fum3_wAnAOVVhxwtMtIQ-15" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=user;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Сформировать ответ&lt;/span&gt;" vertex="1">
                     <mxGeometry height="80" width="120" x="800" y="25" as="geometry"/>
                 </mxCell>
-                <mxCell id="Fum3_wAnAOVVhxwtMtIQ-81" edge="1" parent="Fum3_wAnAOVVhxwtMtIQ-15" source="Fum3_wAnAOVVhxwtMtIQ-17" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="Fum3_wAnAOVVhxwtMtIQ-80">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="Fum3_wAnAOVVhxwtMtIQ-25" parent="Fum3_wAnAOVVhxwtMtIQ-14" style="swimlane;html=1;startSize=20;horizontal=0;absoluteArcSize=0;swimlaneHead=1;swimlaneBody=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;roundedPerimeter=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Кредитный конвейер&lt;/span&gt;" vertex="1">
                     <mxGeometry height="220" width="1000" y="350" as="geometry"/>
                 </mxCell>
                 <mxCell id="Fum3_wAnAOVVhxwtMtIQ-38" parent="Fum3_wAnAOVVhxwtMtIQ-25" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=service;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Скоринг (автоматически)&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="80" width="120" x="200" y="60" as="geometry"/>
+                    <mxGeometry height="80" width="120" x="585" y="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="Fum3_wAnAOVVhxwtMtIQ-40" parent="Fum3_wAnAOVVhxwtMtIQ-25" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=service;fontColor=#000000;" value="&lt;span style=&quot;text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;Отправить отчёт&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Скоринга&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="80" width="120" x="585" y="60" as="geometry"/>
+                    <mxGeometry height="80" width="120" x="800" y="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="Fum3_wAnAOVVhxwtMtIQ-41" edge="1" parent="Fum3_wAnAOVVhxwtMtIQ-25" source="Fum3_wAnAOVVhxwtMtIQ-38" style="edgeStyle=none;html=1;" target="Fum3_wAnAOVVhxwtMtIQ-40" value="">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="Fum3_wAnAOVVhxwtMtIQ-73" edge="1" parent="Fum3_wAnAOVVhxwtMtIQ-14" source="Fum3_wAnAOVVhxwtMtIQ-40" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="Fum3_wAnAOVVhxwtMtIQ-17">
+                <mxCell id="Fum3_wAnAOVVhxwtMtIQ-73" edge="1" parent="Fum3_wAnAOVVhxwtMtIQ-14" source="Fum3_wAnAOVVhxwtMtIQ-40" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="Fum3_wAnAOVVhxwtMtIQ-80">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="645" y="250" as="targetPoint"/>
                     </mxGeometry>
@@ -106,7 +105,7 @@
                         <mxPoint x="990" y="-1605" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="Fum3_wAnAOVVhxwtMtIQ-86" edge="1" parent="1" source="Fum3_wAnAOVVhxwtMtIQ-82" style="edgeStyle=none;html=1;dashed=1;flowAnimation=1;" target="Fum3_wAnAOVVhxwtMtIQ-91">
+                <mxCell id="Fum3_wAnAOVVhxwtMtIQ-86" edge="1" parent="1" source="Fum3_wAnAOVVhxwtMtIQ-82" style="edgeStyle=none;html=1;dashed=1;flowAnimation=1;fillColor=#d80073;strokeColor=#A50040;" target="Fum3_wAnAOVVhxwtMtIQ-91">
                     <mxGeometry relative="1" x="0.6599" as="geometry">
                         <Array as="points">
                             <mxPoint x="670" y="-1560"/>
